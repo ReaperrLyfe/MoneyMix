@@ -1,0 +1,409 @@
+/*Browser Padding Reset*/
+ * {padding: 0; margin: 0;}
+
+/*Body Height*/
+ body {height: 460vh;}
+
+/*Loader Container*/
+ .loader-wrapper {width: 100% ;height: 100%; position: fixed;
+                z-index: 100000; top: 0; left: 0;
+                background-color:#00ace6; opacity: 1;}
+
+
+/*Loading Screen Css*/
+
+ body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+ ;
+ }
+ .center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+ }
+ .wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, gold, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+ }
+ .wave:nth-child(2) {
+  animation-delay: 0.05s;
+ }
+ .wave:nth-child(3) {
+  animation-delay: 0.10s;
+ }
+ .wave:nth-child(4) {
+  animation-delay: 0.15s;
+ }
+ .wave:nth-child(5) {
+  animation-delay: 0.2s;
+ }
+.wave:nth-child(6) {
+  animation-delay: 0.25s;
+ }
+ .wave:nth-child(7) {
+  animation-delay: 0.30s;
+ }
+ .wave:nth-child(8) {
+  animation-delay: 0.35s;
+ }
+ .wave:nth-child(9) {
+  animation-delay: 0.40s;
+ }
+ .wave:nth-child(10) {
+  animation-delay: 0.45s;
+ }
+
+ @keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+ }
+
+
+/*Header Design/Position*/
+ .header {position: absolute; background-color: #222; height: 16vh;
+         width: 100%; top: 0; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+         z-index: 4;}
+
+/*Logo Design/Position*/
+.nav {position: relative;}
+ .logo {bottom: -1%; left: 5%; position: absolute; opacity: 0; }
+
+ /*Title Card*/
+ .titlecard {
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1040;
+  position:;
+  margin-top: -6vh;
+  padding-left: 10vw;
+}
+
+.titlesub{
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 31;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+.titlesub:hover {
+  font-variation-settings: "wght" 58; 
+  letter-spacing: 1px;
+}
+
+.titlesub2{
+  font-size: 1.6em;
+  line-height: 50%;
+  text-align: center;
+  color: MintCream;
+  letter-spacing: .5px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+            
+/*Scroll-Bar Customization*/
+ html::-webkit-scrollbar {width: 1vw;}
+
+ html::-webkit-scrollbar-thumb 
+               {background-color: silver;border-radius: 100vw;}
+
+ html::-webkit-scrollbar-thumb:hover {background-color: gold;}
+
+ html::-webkit-scrollbar-track {background-color: #4E4E4E;}
+
+/*Active*/
+.active {color: lightyellow !important;;}
+
+/*Nav Bar Design/Position*/
+ .linav {float: right; display: inline-block; padding-top: 5vh;
+         font-size: 2.2vw; font-family: 'Work Sans', sans-serif;
+         text-transform: uppercase; padding-left: 2.2vw;
+         color: silver; position: relative; font-weight: 300;}
+
+ .headnav {display: flex; justify-content: center;;}
+
+
+/*Hover Effects*/
+ a:link {text-decoration: none;}
+ a:visited {text-decoration: none;}
+ a:hover {text-decoration: none;}
+ a:active {text-decoration: none;}
+
+ .linav:hover {color: lightyellow;} 
+
+ nav li::before {content:''; display: block; height:5px; width:100%;
+                 background-color:lightyellow; position:absolute; top:0;
+                 width:0%; border-radius: 100px;
+
+ transition: all ease-in-out 250ms;}
+
+ nav li:hover::before {width:80%;}
+ 
+/*Sliding Header*/
+ .headspace {height: 100.6vh; width: 100%; position: absolute; top: 0;
+             boder: 2px solid pink;}
+
+ .header {position: sticky;}
+
+/*Email Us Hover*/
+ .footer__btn:hover {background-color: silver !important;}
+ footer a span {z-index: 100;}
+
+/*Home Image(Top)*/
+ .Himg {position: absolute; width: 100%; margin-top: 16vh;
+        boder: 2px solid darkred; height: 85vh;
+        background-image:url("Images(Nymbus)/NymbusDR7.jpg");
+        background-position:center; background-attachment:absolute;
+        background-repeat: no-repeat; z-index: -1; background-size: cover;}
+
+/*Black Overlay(Top)*/
+ .HimgC {position: absolute; width: 100%; margin-top: 16vh;
+         boder: 2px solid darkred; height: 85vh; background-color: black;
+         opacity: 20%;}
+
+/*Home Text(Top)*/
+ .hometext1 {position: relative; font-family: 'Bebas Neue', cursive; font-size: 4.5vw;
+             color: white; margin-top: 40vh; margin-left: 40vw;}
+
+/*Down Arrows*/
+ .arrows {font-size: 6vw; position: absolute;
+          top: 84vh; z-index: 3; color: white; right: 4vw;}
+
+ .arra {right: 0.3vw !important;}
+
+ .arr2 {margin-top:250vh !important}
+
+/*Blue Space*/
+ .bluespot {position: absolute; width: 100%; margin-top: 100.6vh;
+            boder: 2px solid blue; height: 60vh; background-color:#222 ;}
+
+ .bluetext {display: flex; justify-content: safe left; color: white;
+            font-size: 2.7vw; font-family: 'Josefin Sans', sans-serif;
+            padding-top: 6vh;  padding-left: 1vh; letter-spacing: 0.1px;}
+
+ .bluehead {font-family: 'Bebas Neue', cursive; font-size: 3.4vw;}
+
+
+
+/*Image 2(1)*/
+ .image1 {position: absolute; width: 30vw;height: 70vh;
+          boder: 2px solid orange; margin-top:113vh ;
+          margin-left: 65vw;}
+
+ .image1 {background-image:url("Images(Nymbus)/NymbusDR1.jpg");
+          background-position:right; background-attachment:absolute;
+          background-repeat: no-repeat; background-size: cover;}
+
+/*Image 3(2)*/
+ .image2 {position: absolute; width: 40vw; height: 95vh;
+          boder: 2px solid orange; margin-top:187vh ;
+          margin-left: 1vw;}         
+
+ .image2 {background-image:url("Images(Nymbus)/NymbusDR19.jpg");
+          background-position:center; background-attachment:absolute;
+          background-repeat: no-repeat; background-size: cover;}
+
+/*Grey Text*/
+ .greytext {position: absolute; color: white; font-size: 3vw; margin-left: 46vw;
+            margin-top: 207vh; font-family: 'Josefin Sans', sans-serif; z-index: 10;}
+
+ .quotename {position: absolute; color: white; font-size: 3vw; margin-left: 46vw;
+             margin-top: 252vh; font-family: 'Josefin Sans', sans-serif;}
+
+/*Blue Spot Button*/
+ .buttonblue {width: 10vw !important; align-items: center;
+              background-color: initial; background-image: linear-gradient(#464d55, #25292e);
+              border-radius: 8px; border-width: 0;
+              box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+              box-sizing: border-box; color: #fff; cursor: pointer;
+              display: inline-flex; flex-direction: column;
+              font-family: font-family: 'Josefin Sans', sans-serif; font-size: 18px;
+              height: 52px; justify-content: center; line-height: 1;
+              margin: 0; outline: none; overflow: hidden; padding: 0 32px;
+              text-align: center; text-decoration: none; margin-left: 52vw;
+              transform: translate3d(0, 0, 0); transition: all 150ms;
+              vertical-align: baseline; white-space: nowrap; position: absolute; z-index: 20; top:  32.5%;}
+
+/*Button Shadow BS */
+ .buttonblue:hover {box-shadow: rgba(0, 1, 0, .2) 0 2px 8px; opacity: .85;}
+
+ .buttonblue:active {outline: 0;}
+
+ .buttonblue:focus {box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;}
+
+ @media (max-width: 420px) {.buttonblue {height: 48px;}}
+
+/*Quote Mark*/
+.quotemark {position: absolute; font-size: 12vw; font-family: 'PT Sans', sans-serif;
+            top: 185vh; left: 45vw; color: white;}
+
+
+
+/*Blue Spot 2*/ 
+ .blue2 {position: absolute; width: 100%; height: 90vh;
+         margin-top: 260vh; z-index: -1;
+         background-color: #222;}
+/*Artist Friendly Deals*/         
+
+ .deals {color: white; font-size: 7.3vw; font-family: 'Bebas Neue', cursive;
+         margin-top: 200vh; margin-left: 45vw; white-space: nowrap;}
+
+ .dealspara {color: white; font-size: 2.5vw; font-family: 'Bebas Neue', cursive;
+             top: 290vh; margin-left: 45vw; white-space: nowrap; z-index: 100;
+             position: absolute;}
+
+
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+/*End Section*/
+ .end {position: absolute; width: 100%; height: 42vh;
+       background-color: white; margin-top: 349.9vh; z-index: -1;}
+
+ .end-text { font-size: 5vw; font-family: 'Bebas Neue', cursive;
+            margin-top: -99vh; margin-left: 23vw; color: black; white-space: nowrap; z-index: 120;} 
+
+ .endlink {font-size: 5vw; font-family: 'Bebas Neue', cursive;
+           margin-left: 41vw; color:gold; z-index: 1; position: absolute;
+           top: 81.5%; text-decoration: underline;} 
+
+/*Mailing List*/
+ .mail .text-box {position: absolute; bottom: 19vh; z-index: 100; border: none;
+                 height: 5vh; width: 40vw; left: 30vw; border-radius: 5px;
+                 font-family: 'Josefin Sans', sans-serif; font-size: 1.5vw;}
+
+ .label {position: absolute; bottom: 19vh; font-family: 'Josefin Sans', sans-serif;
+         color:gold; z-index: 100; font-size: 2vw; left: 2vw;}
+
+
+/*Footer Section*/
+
+/*Footer Link Hover*/
+ .footer__nav li a:hover {color:gold ;}
+
+ .footer__nav li {z-index: 10;}
+
+ /*Footer Link Hover(End)*/
+
+ *, *:before, *:after {
+  box-sizing: border-box;
+ }
+
+ html {font-size: 100%;}
+
+ body {margin: 0; display: grid; grid-template-rows: auto 1fr auto;
+       font-size: 14px;background-color:lightblue;
+       align-items: start;
+       min-height: 100vh;}
+
+
+
+ .footer {bottom: 0vh; position: absolute; font-family: acumin-pro, system-ui, sans-serif;
+         display: flex; flex-flow: row wrap; padding: 30px 30px 20px 30px;
+         color: #222; background-color: #222; border-top: 1px solid #e5e5e5;
+         width: 100%; height:68vh;}
+
+ .footer > * {flex:  1 100%;}
+
+ .footer__addr {margin-right: 1.25em; margin-bottom: 2em;}
+
+ .footer__logo {font-family: 'Pacifico', cursive; font-weight: 400;
+                font-size: 1.5rem; color: white;}
+
+ .footer__addr h2 {margin-top: 1.3em; font-size: 15px; font-weight: 400;}
+
+ .nav__title {font-weight: 400; font-size: 15px; color: white;}
+
+ .footer address {font-style: normal; color: #999;}
+
+ .footer__btn {display: flex; align-items: center; justify-content: center;
+               height: 36px; max-width: max-content;
+               background-color: white; border-radius: 100px;
+               color: grey; line-height: 0; margin: 0.6em 0;
+               font-size: 1rem; padding: 0 1.3em; transition: all ease-in-out 0.14s;}
+
+ .footer ul {list-style: none; padding-left: 0;}
+
+ .footer li {line-height: 2em;}
+
+ .footer a {text-decoration: none;}
+
+ .footer__nav {display: flex; flex-flow: row wrap;}
+
+ .footer__nav > * {flex: 1 50%; margin-right: 1.25em;}
+
+ .nav__ul a {color: #999;}
+
+ .nav__ul--extra {column-count: 2; column-gap: 1.25em;}
+
+ .legal {display: flex; flex-wrap: wrap; color: #999;
+         position: absolute; padding-top: 59vh;}
+  
+ .legal__links {display: flex; align-items: right; padding-left: 53vw;}
+
+ .heart {color: turquoise;}
+
+ @media screen and (min-width: 24.375em) {
+   .legal .legal__links {
+     margin-left: auto;}}
+
+ @media screen and (min-width: 40.375em) {
+  .footer__nav > * {flex: 1;}
+  
+  .nav__item--extra {flex-grow: 2;}
+  
+  .footer__addr {flex: 1 0px;}
+  
+  .footer__nav {flex: 2 0px;}}
+
+
+  /*MOBILEERROR*/
+
+  @media only screen and (max-width: 600px) {
+
+    body { overflow: hidden;}
+
+    .MOBILEERROR {position: absolute; width: 500%; height: 500%;
+                  top: 0; z-index: 10000;
+                  background-color: lightgoldenrodyellow;}
+
+    .ERRORWORDS{position: absolute; font-size: 11vw;
+                      font-family: 'Bebas Neue', cursive;
+                      z-index: 10007; top: 7%;
+                      left: 19%; color: #00ace6;
+                    }              
+
+  }
